@@ -1,0 +1,178 @@
+{
+    "nodes": [
+        [
+            "1kda6d9Z3LahbSKIapyS-2",
+            "Chemistry"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-3",
+            "Chapter_1"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-4",
+            "Chapter_2"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-7",
+            "1_Topic_1"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-8",
+            "1_Topic_2"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-9",
+            "2_Topic_1"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-10",
+            "2_Topic_2"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-17",
+            "SubTopic_1"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-20",
+            "SubTopic_2"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-21",
+            "SubTopic_4"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-22",
+            "SubTopic_3"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-26",
+            "SubTopic_8"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-27",
+            "SubTopic_7"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-28",
+            "SubTopic_6"
+        ],
+        [
+            "1kda6d9Z3LahbSKIapyS-29",
+            "SubTopic_5"
+        ]
+    ],
+    "pairs": [
+        [
+            {
+                "source": "Chapter_2"
+            },
+            {
+                "target": "Chemistry"
+            }
+        ],
+        [
+            {
+                "source": "Chapter_1"
+            },
+            {
+                "target": "Chemistry"
+            }
+        ],
+        [
+            {
+                "source": "Chapter_1"
+            },
+            {
+                "target": "1_Topic_1"
+            }
+        ],
+        [
+            {
+                "source": "SubTopic_2"
+            },
+            {
+                "target": "1_Topic_1"
+            }
+        ],
+        [
+            {
+                "source": "SubTopic_1"
+            },
+            {
+                "target": "1_Topic_1"
+            }
+        ],
+        [
+            {
+                "source": "2_Topic_2"
+            },
+            {
+                "target": "Chapter_2"
+            }
+        ],
+        [
+            {
+                "source": "2_Topic_1"
+            },
+            {
+                "target": "Chapter_2"
+            }
+        ],
+        [
+            {
+                "source": "1_Topic_2"
+            },
+            {
+                "target": "Chapter_1"
+            }
+        ],
+        [
+            {
+                "source": "SubTopic_8"
+            },
+            {
+                "target": "2_Topic_2"
+            }
+        ],
+        [
+            {
+                "source": "1_Topic_2"
+            },
+            {
+                "target": "SubTopic_4"
+            }
+        ],
+        [
+            {
+                "source": "1_Topic_2"
+            },
+            {
+                "target": "SubTopic_3"
+            }
+        ],
+        [
+            {
+                "source": "SubTopic_7"
+            },
+            {
+                "target": "2_Topic_2"
+            }
+        ],
+        [
+            {
+                "source": "SubTopic_6"
+            },
+            {
+                "target": "2_Topic_1"
+            }
+        ],
+        [
+            {
+                "source": "SubTopic_5"
+            },
+            {
+                "target": "2_Topic_1"
+            }
+        ]
+    ]
+}

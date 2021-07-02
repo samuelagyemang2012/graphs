@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/mycss.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css"/>
+    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <a class="navbar-brand" href="/" style="padding: 0.5%;">Graphs </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<main role="main" class="container">
+    <div class="jumbotron">
+        <h1 style="text-align: center;">Graphs</h1>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 index_box">
+                    <p class="lead">Please upload a book in XML format</p>
+
+                    <form method="POST" action="/upload_book" enctype="multipart/form-data">
+                        <div>
+                            <input type="file" name="file" required>
+                        </div>
+                        <br>
+                        <div>
+                            <button class="btn btn-lg btn-primary" role="f">Upload &raquo;</button>
+                        </div>
+
+                    </form>
+
+                    {% with success = get_flashed_messages(category_filter=["success"]) %}
+                    {% if success %}
+                    <div>
+                        <a class="btn btn-lg btn-success" href="/view_graph">View Graph &raquo;</a>
+                    </div>
+                    {% endif%}
+                    {% endwith %}
+                </div>
+
+                <div class="col-sm-2">
+
+                </div>
+
+                <div class="col-sm-5 index_box">
+                    <p class="lead">Explore all books</p>
+                    <a class="btn btn-lg btn-primary" href="" role="button">Explore
+                        &raquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-5">
+                    {% with errors = get_flashed_messages(category_filter=["error"]) %}
+                    {% if errors %}
+                        <span>
+                            <br><br>
+                            <div class="alert alert-danger" role="alert">{{ errors[0] }}</div>
+                        </span>
+                    {% endif %}
+                    {% endwith %}
+
+                    {%with success = get_flashed_messages(category_filter=["success"]) %}
+                    {% if success %}
+                        <span>
+                            <br><br>
+                            <div class="alert alert-success" role="alert">{{ success[0] }}</div>
+                        </span>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+</body>
+
+</html>
