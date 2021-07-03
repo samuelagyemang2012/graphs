@@ -1,6 +1,10 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/mycss.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css"/>
@@ -8,7 +12,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"></script>
 </head>
 
-<body>
+<body style="font: raleway">
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
     <a class="navbar-brand" href="/" style="padding: 0.5%;">Graphs </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -19,7 +23,6 @@
 
 
 <main role="main" class="container">
-    <p class="lead" style="text-align:center">{{data}}</p>
     <br>
     <div class="container">
         <div class="row">
@@ -27,8 +30,21 @@
                 <div id="mynetwork" style=""></div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="background-color:#eee; text-align:center;padding:1%">
+                <div>
+                    <h3>
+                        <small class="text-muted">{{data}}</small>
+                    </h3>
+                    <hr>
+                </div>
 
+                <div>
+                    <h3>
+                        <blockquote class="blockquote">
+                            <p class="mb-0" style="text-align:center;" id="node_data"></p>
+                        </blockquote>
+                    </h3>
+                </div>
             </div>
         </div>
     </div>
@@ -57,6 +73,8 @@
     xhr.open("GET", "/view_graph",true);
     xhr.setRequestHeader('Accept', 'application/json');
     xhr.send();
+
+
 
 
 

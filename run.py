@@ -1,6 +1,3 @@
-import json
-
-import flask
 from flask import Flask, session
 from flask import render_template, flash, request, redirect, url_for
 from engine.graphs import Graphs

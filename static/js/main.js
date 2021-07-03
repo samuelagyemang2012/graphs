@@ -43,7 +43,7 @@ function drawGraph(nodes, edges) {
             "dragNodes": true,
             "hideEdgesOnDrag": false,
             "hideNodesOnDrag": false,
-            "navigationButtons": true,
+            "navigationButtons": false,
             "selectable": true,
             "hover":true
         },
@@ -63,7 +63,12 @@ function drawGraph(nodes, edges) {
     network.on( 'click', function(properties) {
         var ids = properties.nodes;
         var clickedNodes = nodes.get(ids);
-        alert(clickedNodes[0]["label"]);
+        if(clickedNodes[0]["label"]){
+            //console.log(clickedNodes)
+            document.getElementById("node_data").innerHTML = clickedNodes[0]["label"]
+            //alert(clickedNodes[0]["label"]);
+        }
+
 });
 
     return network;
