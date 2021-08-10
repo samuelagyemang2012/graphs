@@ -3,6 +3,8 @@ from pyvis.network import Network
 import xmltodict
 import json
 import re
+import numpy as np
+import spacy_universal_sentence_encoder
 
 
 class Graphs:
@@ -117,3 +119,16 @@ class Graphs:
     def remove_tags(self, text):
         clean = re.compile('<.*?>|&([a-z0-9]+|#[0-9]{1,6}|#x[0-9a-f]{1,6});')
         return re.sub(clean, ' ', text).strip()
+
+    def get_book_content(self, path):
+        content = ""
+        f = open(path)
+        data = json.load(f)
+
+        for d in data["pairs"]:
+            content += d[1]["target"] + "\n"
+
+        return content
+
+    def cosine(u, v):
+        return np.dot(u, v) / (np.linalg.norm(u) * np.linalg.norm(v))

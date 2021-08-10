@@ -1,0 +1,214 @@
+{
+    "nodes": [
+        [
+            "1749",
+            "Advertising"
+        ],
+        [
+            "1753",
+            "Embassy"
+        ],
+        [
+            "1754",
+            "Theories"
+        ],
+        [
+            "1755",
+            "Appeal"
+        ],
+        [
+            "1756",
+            "Layout"
+        ],
+        [
+            "1760",
+            "Organization"
+        ],
+        [
+            "1761",
+            "Content"
+        ],
+        [
+            "1762",
+            "Budget"
+        ],
+        [
+            "1763",
+            "Analysis"
+        ],
+        [
+            "1764",
+            "Marketing"
+        ],
+        [
+            "1765",
+            "Aims"
+        ],
+        [
+            "1767",
+            "Instruments"
+        ],
+        [
+            "1769",
+            "Segmentation"
+        ],
+        [
+            "1771",
+            "Communication"
+        ],
+        [
+            "1772",
+            "Events"
+        ],
+        [
+            "1774",
+            "Media"
+        ],
+        [
+            "1776",
+            "Sponsoring"
+        ],
+        [
+            "1778",
+            "PR"
+        ]
+    ],
+    "pairs": [
+        [
+            {
+                "source": "Advertising"
+            },
+            {
+                "target": "Marketing"
+            }
+        ],
+        [
+            {
+                "source": "Advertising"
+            },
+            {
+                "target": "Communication"
+            }
+        ],
+        [
+            {
+                "source": "Advertising"
+            },
+            {
+                "target": "Organization"
+            }
+        ],
+        [
+            {
+                "source": "Advertising"
+            },
+            {
+                "target": "Embassy"
+            }
+        ],
+        [
+            {
+                "source": "Embassy"
+            },
+            {
+                "target": "Layout"
+            }
+        ],
+        [
+            {
+                "source": "Embassy"
+            },
+            {
+                "target": "Appeal"
+            }
+        ],
+        [
+            {
+                "source": "Embassy"
+            },
+            {
+                "target": "Theories"
+            }
+        ],
+        [
+            {
+                "source": "Organization"
+            },
+            {
+                "target": "Analysis"
+            }
+        ],
+        [
+            {
+                "source": "Organization"
+            },
+            {
+                "target": "Budget"
+            }
+        ],
+        [
+            {
+                "source": "Organization"
+            },
+            {
+                "target": "Content"
+            }
+        ],
+        [
+            {
+                "source": "Marketing"
+            },
+            {
+                "target": "Aims"
+            }
+        ],
+        [
+            {
+                "source": "Marketing"
+            },
+            {
+                "target": "Instruments"
+            }
+        ],
+        [
+            {
+                "source": "Marketing"
+            },
+            {
+                "target": "Segmentation"
+            }
+        ],
+        [
+            {
+                "source": "Communication"
+            },
+            {
+                "target": "Events"
+            }
+        ],
+        [
+            {
+                "source": "Communication"
+            },
+            {
+                "target": "Media"
+            }
+        ],
+        [
+            {
+                "source": "Communication"
+            },
+            {
+                "target": "Sponsoring"
+            }
+        ],
+        [
+            {
+                "source": "Communication"
+            },
+            {
+                "target": "PR"
+            }
+        ]
+    ]
+}
